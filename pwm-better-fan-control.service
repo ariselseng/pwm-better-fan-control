@@ -1,0 +1,17 @@
+[Unit]
+Description=PWM laptop automatic fan control
+ 
+[Service]
+Type=simple
+ 
+User=root
+Group=root
+UMask=007
+Nice=-15
+ 
+ExecStart=/usr/local/bin/pwm-better-fan-control
+ 
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target

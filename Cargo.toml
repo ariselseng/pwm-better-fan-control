@@ -1,0 +1,11 @@
+[package]
+name = "pwm-better-fan-control"
+version = "1.0.0"
+authors = ["Ari Selseng <ari@selseng.net>"]
+
+[dependencies]
+libc = "0.2"
+graceful = "0.1.1"
+sysfs-class = { git = "https://github.com/pop-os/sysfs-class" }
+
+
